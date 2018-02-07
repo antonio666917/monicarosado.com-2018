@@ -3,16 +3,16 @@ import styled from "styled-components";
 import { colors } from "../utils/colors";
 
 const StyledMenu = styled.ul`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
+  justify-items: center;
 
   .menu__item {
     color: ${colors.black};
     text-decoration: none;
-    font-weight: normal;
     font-weight: 300;
+    font-size: 0.8rem;
     transition: all 0.666s;
     padding: 0.2rem 0.5rem;
     border-radius: 4px;
@@ -34,11 +34,15 @@ const Menu = ({ id }) => {
       <a className="menu__item" href="mailto:hi@monicarosado.com">
         email
       </a>
-
       <a className="menu__item" href="tel:787-644-8557">
         phone
       </a>
-      <a className="menu__item" href="https://linkedin.com">
+      <a
+        className="menu__item"
+        href="https://www.linkedin.com/in/monicarosado/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         linkedin
       </a>
     </StyledMenu>

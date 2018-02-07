@@ -23,7 +23,8 @@ const StyledHome = styled.main`
   ul,
   li,
   button,
-  img {
+  img,
+  hr {
     margin: 0;
     padding: 0;
   }
@@ -33,7 +34,6 @@ const StyledHome = styled.main`
     height: var(--mobileProfilePictureSize);
     border-radius: var(--mobileProfilePictureSize);
     object-fit: cover;
-    border: 0.1px solid black;
     margin: 0 auto;
   }
 
@@ -59,6 +59,11 @@ const StyledHome = styled.main`
     font-size: 1rem;
   }
 
+  hr {
+    margin: 1rem auto;
+    opacity: 0.5;
+  }
+
   @media (min-width: 500px) {
     .main__profilepicture {
       width: var(--desktopProfilePictureSize);
@@ -69,7 +74,7 @@ const StyledHome = styled.main`
       font-size: 3rem;
     }
     .main__brands-wrapper {
-      width: 42%;
+      width: 62%;
     }
   }
 `;
@@ -80,17 +85,21 @@ const Home = ({ id }) => {
       <img className="main__profilepicture" src={ProfilePicture} alt="" />
       <h1 className="main__title">monica rosado</h1>
       <h2 className="main__subtitle">
-        digital account supervisor{" "}
-        <span role="img" aria-label="flower emoji">
-          🌸
+        digital account and client services lead{" "}
+        <span role="img" aria-label="wavy dash emoji">
+          〰️
         </span>{" "}
-        client services, marketing and social media expert
+        web, marketing and social media
       </h2>
 
-      <h3 className="main__brands">worked with</h3>
+      <hr />
+
+      <h3 className="main__brands">brand portfolio</h3>
       <div className="main__brands-wrapper">
         <BrandGrid />
       </div>
+
+      <hr />
 
       <h3 className="main__brands">contact</h3>
       <Menu />
