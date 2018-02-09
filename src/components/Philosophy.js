@@ -12,7 +12,7 @@ const StyledPhilosophy = styled.div`
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  height: 366px;
+  min-height: 366px;
   margin-bottom: 2rem;
 
   h3 {
@@ -34,6 +34,19 @@ const StyledPhilosophy = styled.div`
     margin: 0;
     text-transform: uppercase;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (min-width: 640px) {
+    background-position: center center;
+    padding: 7rem;
+
+    h3 {
+      font-size: 5rem;
+      line-height: 5rem;
+      letter-spacing: -0.06em;
+      max-width: var(--container-width);
+      margin: 0 auto;
+    }
   }
 `;
 

@@ -28,12 +28,12 @@ const StyledBrandGrid = styled.ul`
     max-width: 110px;
   }
 
-  @media (min-width: 500px) {
-    grid-gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  @media (min-width: 640px) {
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
     .brand__logo {
-      width: 123px;
+      height: 35px;
     }
   }
 `;

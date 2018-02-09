@@ -98,6 +98,19 @@ const StyledConnect = styled.div`
   .social__icon-spotify {
     background: #1db954;
   }
+
+  @media (min-width: 640px) {
+    background-position: center center;
+    padding: 7rem;
+
+    h4 {
+      font-size: 5rem;
+      line-height: 5rem;
+      letter-spacing: -0.06em;
+      max-width: var(--container-width);
+      margin: 0 auto;
+    }
+  }
 `;
 
 const Connect = () => {
@@ -126,8 +139,9 @@ const Connect = () => {
         <li>
           <a
             className="social__icon  social__icon-facebook"
-            href="#facebook"
+            href="https://www.facebook.com/monirosado"
             rel="noopener noreferrer"
+            target="_blank"
           >
             <FacebookIcon />
           </a>
@@ -135,8 +149,9 @@ const Connect = () => {
         <li>
           <a
             className="social__icon  social__icon-linkedin"
-            href="#linkedin"
+            href="https://www.linkedin.com/in/monicarosado/"
             rel="noopener noreferrer"
+            target="_blank"
           >
             <LinkedInIcon />
           </a>
@@ -144,8 +159,9 @@ const Connect = () => {
         <li>
           <a
             className="social__icon  social__icon-instagram"
-            href="#instagram"
+            href="https://www.instagram.com/moni_rosado/"
             rel="noopener noreferrer"
+            target="_blank"
           >
             <InstagramIcon />
           </a>
@@ -153,8 +169,9 @@ const Connect = () => {
         <li>
           <a
             className="social__icon  social__icon-spotify"
-            href="#spotify"
+            href="https://open.spotify.com/user/1210324498"
             rel="noopener noreferrer"
+            target="_blank"
           >
             <SpotifyIcon />
           </a>

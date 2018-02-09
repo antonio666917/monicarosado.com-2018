@@ -11,7 +11,7 @@ const StyledHero = styled.div`
   background-size: cover;
   background-position: center -110px;
   background-attachment: fixed;
-  height: 366px;
+  min-height: 366px;
 
   h2 {
     font-size: 1.6rem;
@@ -22,10 +22,18 @@ const StyledHero = styled.div`
     color: rgba(111, 108, 117, 0.5);
     margin: 0;
     text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.2);
+  }
 
-    @media (min-width: 1000px) {
+  @media (min-width: 640px) {
+    background-position: center center;
+    padding: 7rem;
+
+    h2 {
       font-size: 5rem;
+      line-height: 5rem;
       letter-spacing: -0.06em;
+      max-width: var(--container-width);
+      margin: 0 auto;
     }
   }
 `;

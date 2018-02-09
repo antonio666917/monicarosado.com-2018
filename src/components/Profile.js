@@ -16,6 +16,11 @@ const StyledProfile = styled.div`
     font-size: 0.95rem;
     margin-bottom: 1rem;
   }
+
+  @media (min-width: 640px) {
+    width: var(--container-width);
+    margin: 0 auto;
+  }
 `;
 
 const Profile = () => {
