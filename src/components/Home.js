@@ -8,7 +8,7 @@ import Connect from "./Connect";
 
 const StyledHome = styled.main`
   --pink: #fde9f2;
-  --gray: rgba(112, 112, 112, 0.5);
+  --gray: #b6acb1;
   --black: rgb(82, 82, 82);
   --white: #ffffff;
   --container-width: 600px;

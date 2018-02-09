@@ -7,11 +7,8 @@ const StyledHero = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
-  background: var(--pink) url(${LogoBG}) no-repeat;
-  background-size: cover;
-  background-position: center -110px;
-  background-attachment: fixed;
   min-height: 366px;
+  overflow: hidden;
 
   h2 {
     font-size: 1.6rem;
@@ -22,6 +19,17 @@ const StyledHero = styled.div`
     color: rgba(111, 108, 117, 0.5);
     margin: 0;
     text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.2);
+  }
+
+  img {
+    display: block;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
   }
 
   @media (min-width: 640px) {
@@ -41,6 +49,7 @@ const StyledHero = styled.div`
 const Hero = () => {
   return (
     <StyledHero>
+      <img src={LogoBG} alt="" />
       <h2>digital account lead • web, digital, social marketing</h2>
     </StyledHero>
   );

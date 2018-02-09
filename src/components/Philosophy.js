@@ -11,7 +11,7 @@ const StyledPhilosophy = styled.div`
   background: var(--pink) url(${CactusBG}) no-repeat;
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
+  background-attachment: initial;
   min-height: 366px;
   margin-bottom: 2rem;
 
@@ -37,7 +37,7 @@ const StyledPhilosophy = styled.div`
   }
 
   @media (min-width: 640px) {
-    background-position: center center;
+    background-attachment: fixed;
     padding: 7rem 2rem;
 
     h3 {
