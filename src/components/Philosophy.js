@@ -26,7 +26,7 @@ const StyledPhilosophy = styled.div`
   }
   h4 {
     text-align: center;
-    font-size: 0.65rem;
+    font-size: 0.5rem;
     line-height: 0.85rem;
     font-weight: bold;
     letter-spacing: 1px;
@@ -46,6 +46,10 @@ const StyledPhilosophy = styled.div`
       letter-spacing: -0.06em;
       max-width: var(--container-width);
       margin: 0 auto;
+    }
+
+    h4 {
+      font-size: 0.65rem;
     }
   }
 `;

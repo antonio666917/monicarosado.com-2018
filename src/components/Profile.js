@@ -41,8 +41,8 @@ const Profile = () => {
       <h3>mission</h3>
       <p>
         a new year has come filled with new opportunities and changes — thanks
-        for helping in spreading my resumé to hands that can make a difference
-        as i look to relocate from miami to california.
+        for helping in spreading my contact info to hands that can make a
+        difference as i look to relocate from miami to california.
       </p>
       <p>
         as a client services lead and a web, digital, social marketing

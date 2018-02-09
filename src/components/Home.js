@@ -21,8 +21,8 @@ const StyledHome = styled.main`
 
   .main__title {
     text-align: center;
-    color: rgba(110, 108, 99, 0.87);
-    font-size: 1.5rem;
+    color: var(--black);
+    font-size: 1.35rem;
     margin: 0;
   }
 
