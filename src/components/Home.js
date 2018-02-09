@@ -14,7 +14,7 @@ const StyledHome = styled.main`
   --container-width: 600px;
 
   display: grid;
-  grid-template-columns: minmax(350px, 1fr);
+  grid-template-columns: minmax(320px, 1fr);
   grid-gap: 1rem;
   padding: 1rem;
   overflow: hidden;
