@@ -26,7 +26,7 @@ const StyledHero = styled.div`
 
   @media (min-width: 640px) {
     background-position: center center;
-    padding: 7rem;
+    padding: 7rem 2rem;
 
     h2 {
       font-size: 5rem;
