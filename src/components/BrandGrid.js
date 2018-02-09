@@ -7,25 +7,25 @@ import LogoHonda from "../assets/logos/honda.png";
 import LogoLexus from "../assets/logos/lexus.png";
 import LogoJoseCuervo from "../assets/logos/josecuervo.png";
 import LogoToyota from "../assets/logos/toyota.png";
+import LogoMercedesBenz from "../assets/logos/mercedesbenz.png";
+import LogoWalgreens from "../assets/logos/walgreens.png";
+import LogoScion from "../assets/logos/scion.png";
 
 const StyledBrandGrid = styled.ul`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   list-style: none;
-
+  margin: 0;
   li {
   }
 
   .brand__logo {
     object-fit: contain;
     object-position: center center;
-    width: 100%;
-    height: 30px;
-    filter: grayscale(100%);
-    opacity: 0.5;
+    max-width: 110px;
   }
 
   @media (min-width: 500px) {
@@ -33,8 +33,7 @@ const StyledBrandGrid = styled.ul`
     grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
 
     .brand__logo {
-      width: 100%;
-      height: 40px;
+      width: 123px;
     }
   }
 `;
@@ -53,21 +52,34 @@ const Logo = ({ logo, name, url, link }) => {
 const BrandGrid = () => {
   return (
     <StyledBrandGrid className="brands">
-      <Logo name="Sprint" logo={LogoSprint} url="https://www.sprint.com/" />
-      <Logo
-        name="BoehringerIngelheim"
-        logo={LogoBoehringerIngelheim}
-        url="https://www.boehringer-ingelheim.us/"
-      />
       <Logo
         name="BoysAndGirlsClub"
         logo={LogoBoysAndGirlsClub}
         url="https://www.bgca.org/"
       />
+      <Logo
+        name="BoehringerIngelheim"
+        logo={LogoBoehringerIngelheim}
+        url="https://www.boehringer-ingelheim.us/"
+      />
+
       <Logo name="Honda" logo={LogoHonda} url="https://www.honda.com/" />
-      <Logo name="Lexus" logo={LogoLexus} url="http://www.lexus.com/" />
+
       <Logo name="Toyota" logo={LogoToyota} url="https://www.toyota.com/" />
+      <Logo name="Lexus" logo={LogoLexus} url="http://www.lexus.com/" />
+      <Logo
+        name="Mercedes-Benz"
+        logo={LogoMercedesBenz}
+        url="https://www.mbusa.com/"
+      />
+      <Logo name="Sprint" logo={LogoSprint} url="https://www.sprint.com/" />
       <Logo name="JoseCuervo" logo={LogoJoseCuervo} url="http://cuervo.com/" />
+      <Logo
+        name="Walgreens"
+        logo={LogoWalgreens}
+        url="https://www.walgreens.com/"
+      />
+      <Logo name="Scion" logo={LogoScion} url="https://www.toyota.com/scion" />
     </StyledBrandGrid>
   );
 };
