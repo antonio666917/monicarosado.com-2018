@@ -25,8 +25,8 @@ const StyledHero = styled.div`
     display: block;
     position: fixed;
     z-index: -1;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
     top: 0;
     left: 0;
